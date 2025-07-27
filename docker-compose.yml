@@ -1,0 +1,15 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./code:/usr/share/nginx/html
+  node: 
+    image: node:latest
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    ports:
+      - "3000:3000"
