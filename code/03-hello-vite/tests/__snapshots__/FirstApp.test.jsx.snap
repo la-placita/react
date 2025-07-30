@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Prueba en <FirstApp /> debe mostrar el título correctamente 1`] = `
+<div>
+  <h1>
+    Hola, soy Goku
+  </h1>
+  <p>
+    0
+  </p>
+  <p>
+    Autor: 
+    Pako Díaz
+  </p>
+</div>
+`;

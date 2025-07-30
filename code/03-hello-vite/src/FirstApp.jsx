@@ -6,10 +6,6 @@ export default function FirstApp({
     subTitle = 0, 
     name = "Pako Díaz"
 }) {
-    
-    // Para debugging - puedes ver los props en la consola
-    console.log('FirstApp props:', { title, subTitle, name });
-    
     return (
         <>
             <h1>{ title }</h1>
