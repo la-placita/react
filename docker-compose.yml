@@ -45,3 +45,24 @@ services:
       - "3003:5173"
     stdin_open: true
     tty: true
+
+  gif-expert-app:
+    image: node:latest
+    volumes:
+      - ./code/04-gif-expert-app:/app
+    working_dir: /app
+    command: bash -c "yarn install && yarn dev --host 0.0.0.0"
+    ports:
+      - "3004:5173"
+    stdin_open: true
+    tty: true
+  hook-app:
+    image: node:latest
+    volumes:
+      - ./code/05-hook-app:/app
+    working_dir: /app
+    command: bash -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "3005:5173"
+    stdin_open: true
+    tty: true
