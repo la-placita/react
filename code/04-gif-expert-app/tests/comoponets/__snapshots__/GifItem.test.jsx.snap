@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`GifItem should be match with snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Test"
+      src="https://example.com/test.gif"
+      style="width: 200px;"
+    />
+    <p>
+      Test
+    </p>
+  </div>
+</div>
+`;
