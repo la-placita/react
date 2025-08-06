@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export const useCounter = ( initialValue = 10) => {
     const [counter, setCounter] = useState(initialValue);
-    const increment = (step) => setCounter(counter + step);
+    const increment = (step=1) => setCounter(counter + step);
     const decrement = (step) => {
         const result = counter - step;
         if(result >= 0)
