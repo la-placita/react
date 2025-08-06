@@ -13,5 +13,6 @@
     },
     "workbench.colorTheme": "Default Dark+",
     "explorer.compactFolders": false,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.renderWhitespace": "all"
 }
