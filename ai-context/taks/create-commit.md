@@ -1,1 +1,1 @@
-crea un commit de todas las modificaciones, similar a los anteriores y realiza el push
+agrega todas las modificaciones y crea un commit de todas las modificaciones, similar a los anteriores y realiza el push

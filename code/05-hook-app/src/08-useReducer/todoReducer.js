@@ -1,9 +1,16 @@
 export const todoReducer = (initialState = [], action = {}) => {
     switch (action.type) {
+
         case 'ABC':
             throw new Error('Action type not implemented');
 
-        default:
+            case '[TODO] Add Todos':
+            return [...initialState, action.payload];
+
+        case '[TODO] Remove Todos':
+            return initialState.filter(todo => todo.id !== action.payload);
+
+            default:
             return initialState;
     }
 }
