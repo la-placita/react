@@ -18,8 +18,16 @@ export const MultipleCustomHook = () => {
             <hr />
             {isLoading && <LoadingMessage />}
             {data && <PokemonCard id={data.id} name={data.name} sprites={sprites} className="mb-4" />}
-            <button className="btn btn-primary mr-2" onClick={()=>decrement(1)}>Anterior</button>
-            <button className="btn btn-primary" onClick={()=>increment(1)}>Siguiente</button>
+            <button 
+                className="btn btn-primary mr-2" 
+                onClick={()=>decrement(1)}
+                disabled={isLoading}
+            >Anterior</button>
+            <button 
+                className="btn btn-primary"
+                disabled={isLoading}
+                onClick={()=>increment(1)}
+            >Siguiente</button>
         </>
     )
 }
